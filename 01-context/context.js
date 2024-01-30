@@ -15,23 +15,15 @@ class Fish {
 const nemo = new Fish('Nemo');
 
 /********************************* Scenario 1 *********************************/
-// eat(); // ?
-
-
+eat(); // undefined eats fish food
 /********************************* Scenario 2 *********************************/
-// nemo.eat = eat;
-// nemo.eat(); // ?
-
-
+nemo.eat = eat;
+nemo.eat(); // nemo eats fish food
 /********************************* Scenario 3 *********************************/
-// nemo.eat = eat;
-// eat(); // ?
-
-
+nemo.eat = eat;
+eat(); // undefined eats fish food
 /********************************* Scenario 4 *********************************/
-// nemo.swim(); // ?
-
-
+nemo.swim(); // nemo swimming in the water
 /********************************* Scenario 5 *********************************/
-// const swim = nemo.swim;
-// swim(); // ?
+const swim = nemo.swim;
+swim(); // error, global Object doesn't have a name
