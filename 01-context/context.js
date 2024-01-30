@@ -15,23 +15,16 @@ class Fish {
 const nemo = new Fish('Nemo');
 
 /********************************* Scenario 1 *********************************/
-// eat(); // ?
-
-
+eat(); // undefined eats the fish food
 /********************************* Scenario 2 *********************************/
-// nemo.eat = eat;
-// nemo.eat(); // ?
-
-
+nemo.eat = eat;
+nemo.eat(); // Nemo eats the fish food
 /********************************* Scenario 3 *********************************/
-// nemo.eat = eat;
-// eat(); // ?
-
-
+nemo.eat = eat;
+eat(); // undefined eats the fish food
 /********************************* Scenario 4 *********************************/
-// nemo.swim(); // ?
-
-
+nemo.swim(); // Nemo swimming in the water
 /********************************* Scenario 5 *********************************/
-// const swim = nemo.swim;
-// swim(); // ?
+const swim = nemo.swim;
+// undefined.swim()
+swim(); // error
